@@ -98,7 +98,7 @@
    <script type="text/javascript">
         var feature = function() {
             $.get("feature_json", function(data) {
-                $('#match').prop("href", "/match/match_id/update".replace("match_id", data.match)).text("Match " + data.match);
+                $('#match').attr("href", "/match/match_id/update".replace("match_id", data.match)).text("Match " + data.match);
                 $('#timer').text(data.time);
             });
         };
