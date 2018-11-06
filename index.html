@@ -11,8 +11,8 @@
     <body class="bg-light">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
-        <a class="navbar-brand" href="#">
-            <img src="{{ asset('bundles/dutchopenseries/images/dutch_open_series_logo.png') }}"/>
+        <a class="navbar-brand" href="/">
+            DutchOpenSeries
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,17 +22,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('default_home') }}">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Feature
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ path('feature_round') }}">Round</a>
+                        <a class="dropdown-item" href="/">Round</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{{ path('feature_match', {'matchId': 1}) }}">Match 1</a>
-                        <a class="dropdown-item" href="{{ path('feature_match', {'matchId': 2}) }}">Match 2</a>
+                        <a class="dropdown-item" href="/">Match 1</a>
+                        <a class="dropdown-item" href="/">Match 2</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -40,15 +40,15 @@
                         Coverage
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ path('coverage_crew', {'crewType': constant('DutchOpenSeriesBundle\\Model\\Crew::TYPE_BOOTH')}) }}">Booth</a>
-                        <a class="dropdown-item" href="{{ path('coverage_crew', {'crewType': constant('DutchOpenSeriesBundle\\Model\\Crew::TYPE_NEWS_DESK')}) }}">News Desk</a>
+                        <a class="dropdown-item" href="/">Booth</a>
+                        <a class="dropdown-item" href="/">News Desk</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{{ path('coverage_players_to_watch') }}">Players to Watch</a>
-                        <a class="dropdown-item" href="{{ path('coverage_elimination_bracket') }}">Elimination Bracket</a>
+                        <a class="dropdown-item" href="/">Players to Watch</a>
+                        <a class="dropdown-item" href="/">Elimination Bracket</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('player_list') }}">Players</a>
+                    <a class="nav-link" href="/">Players</a>
                 </li>
             </ul>
         </div>
