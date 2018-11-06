@@ -90,7 +90,7 @@
         
     <script type="text/javascript">
         var timer = function() {
-            $.get("/timer/time", function(data) {
+            $.get("timer.txt", function(data) {
                 $('#timer').text(data);
             });
         };
