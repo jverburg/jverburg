@@ -95,20 +95,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
-    <script type="text/javascript">
-        var timer = function() {
-            $.get("timer.txt", function(data) {
+   <script type="text/javascript">
+        var feature = function() {
+            $.get("feature_json", function(data) {
                 $('#match').prop("href", "/match/match_id/update".replace("match_id", data.match)).text("Match " + data.match);
                 $('#timer').text(data.time);
             });
         };
 
         jQuery(document).ready(function(){
-            timer();
+            feature();
 
             setInterval(function()
             {
-                timer();
+                feature();
             },1000);
         });
     </script>
