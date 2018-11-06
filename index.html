@@ -97,7 +97,7 @@
         
    <script type="text/javascript">
         var feature = function() {
-            $.get("feature.json", function(data) {
+            $.getJSON("feature.json", function(data) {
                 $('#match').attr("href", "/match/match_id/update".replace("match_id", data.match)).text("Match " + data.match);
                 $('#timer').text(data.time);
             });
